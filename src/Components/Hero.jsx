@@ -3,11 +3,14 @@ import profile from "../assets/profile.jpeg";
 
 const Hero = () => {
   return (
-    <section id="hero" className="relative w-full overflow-hidden bg-linear-to-br from-purple-100 via-pink-100 to-blue-100">
-      <div className="max-w-7xl mx-auto px-6 py-16 sm:py-20 lg:py-28">
+    <section
+      id="hero"
+      className="w-full min-h-screen overflow-hidden bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 flex items-center"
+      style={{ minHeight: "100vh" }}
+    >
+      <div className="max-w-7xl mx-auto w-full px-6 py-16 sm:py-20 lg:py-28">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-14">
 
-          {/* IMAGE – FIRST ON MOBILE */}
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
             <div className="bg-white rounded-3xl shadow-2xl p-3">
               <img

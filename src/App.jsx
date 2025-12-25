@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+
+
 import Hero from './Components/Hero'
 import Nav from './Components/Nav'
 import About from './Components/About'
@@ -10,7 +10,7 @@ import Footer from './Components/Footer'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
