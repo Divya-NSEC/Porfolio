@@ -5,8 +5,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="w-full min-h-screen overflow-hidden bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 flex items-center"
-      style={{ minHeight: "100vh" }}
+      className="w-full overflow-hidden bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 flex items-center min-h-screen pt-16 md:pt-0"
     >
       <div className="max-w-7xl mx-auto w-full px-6 py-16 sm:py-20 lg:py-28">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-14">

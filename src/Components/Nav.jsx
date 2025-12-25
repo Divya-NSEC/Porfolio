@@ -22,8 +22,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-white z-50 shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <nav className="absolute top-0 w-full bg-white z-50 shadow-sm">
+      <div className="max-w-7xl mx-auto px-4 h-16 md:h-20 flex items-center justify-between">
 
         {/* LEFT (Brand) */}
         <div className="flex items-center gap-3">
