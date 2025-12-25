@@ -25,15 +25,8 @@ const Navbar = () => {
     <nav className="fixed top-0 w-full bg-white z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
 
-        {/* LEFT */}
+        {/* LEFT (Brand) */}
         <div className="flex items-center gap-3">
-          <button
-            className="md:hidden text-2xl font-bold"
-            onClick={() => setOpen(!open)}
-          >
-            ☰
-          </button>
-
           <div className="flex items-center gap-3">
             <div className="w-11 h-11 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold text-3xl">
               D
@@ -60,13 +53,22 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* RIGHT */}
-        <button
-          onClick={() => handleScroll({ name: "Contact", id: "contact" })}
-          className="px-4 py-2 bg-purple-600 text-white text-xl font-medium rounded-md shadow hover:bg-purple-800 transition"
-        >
-          Contact
-        </button>
+        {/* RIGHT (Mobile menu icon + Desktop Contact) */}
+        <div className="flex items-center gap-3">
+          <button
+            className="md:hidden text-2xl font-bold"
+            onClick={() => setOpen(!open)}
+            aria-label="Open menu"
+          >
+            ☰
+          </button>
+          <button
+            onClick={() => handleScroll({ name: "Contact", id: "contact" })}
+            className="hidden md:inline-flex px-4 py-2 bg-purple-600 text-white text-xl font-medium rounded-md shadow hover:bg-purple-800 transition"
+          >
+            Contact
+          </button>
+        </div>
       </div>
 
       {/* MOBILE MENU */}
